@@ -18,9 +18,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-df = data=sm.datasets.sunspots.load_pandas().data
+data = sm.datasets.sunspots.load_pandas().data
 data = data["SUNACTIVITY"].values
-N=len(data)
+N = len(data)
 lags = range(35)
 
 #Pre-allocate autocorrelation table
